@@ -55,7 +55,7 @@ namespace Dot_NET_Solutions_Developer_Question_7
 
 
             //Validate Users Input
-            Regex onlyNumbersPattern = new Regex("([-]{1}?)\\d*$", RegexOptions.Compiled | RegexOptions.IgnoreCase);
+            Regex onlyNumbersPattern = new Regex("^-?\\d*$", RegexOptions.Compiled | RegexOptions.IgnoreCase);
 
             Match matches = onlyNumbersPattern.Match(usersInput);
 
